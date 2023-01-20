@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/id/<int:id>', methods=['GET'])
 def get(id: int):
-    return {"message": bool(id >= 5000)}
+    return {"result": bool(id >= 5000)}
 
 
 @app.route('/id', methods=['POST'])
