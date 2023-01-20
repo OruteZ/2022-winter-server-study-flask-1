@@ -10,7 +10,7 @@ def get(id: int):
 
 @app.route('/id', methods=['POST'])
 def post():
-    req = request.json()
+    req = request.json
     return {'name': req['name']}
 
 
